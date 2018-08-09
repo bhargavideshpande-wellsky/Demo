@@ -1,0 +1,16 @@
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\CricketGame.test.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\CricketGame.test.pdb
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Cricket.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Cricket.pdb
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\obj\Debug\CricketGame.test.csprojAssemblyReference.cache
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\obj\Debug\CricketGame.test.csproj.CoreCompileInputs.cache
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\obj\Debug\CricketGame.test.csproj.CopyComplete
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\obj\Debug\CricketGame.test.dll
+C:\Users\bdeshpande\source\repos\CricketGame\CricketGame.test\obj\Debug\CricketGame.test.pdb

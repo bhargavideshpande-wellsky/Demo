@@ -51,9 +51,11 @@ namespace WebApiDemo.Controllers
         }
         public ApiResponse GetHotelById(int id)
         {
-            Hotel specificHotel = hotels.Find(x => x.Id == id);
-            if (specificHotel != null)
+            
+                Hotel specificHotel = hotels.Find(x => x.Id == id);
+            try
             {
+
                 return new ApiResponse()
                 {
                     Hotels = new List<Hotel>() { specificHotel },
@@ -65,24 +67,28 @@ namespace WebApiDemo.Controllers
                     }
                 };
             }
-            return new ApiResponse()
+            catch (Exception e)
             {
-                Hotels = null,
-                Status = new Status()
+                return new ApiResponse()
                 {
-                    Apistatus = ApiStatus.Failure,
-                    errorCode = 500,
-                    errorMessage = "Internal Server Error"
-                }
-            };
+                    Hotels = null,
+                    Status = new Status()
+                    {
+                        Apistatus = ApiStatus.Failure,
+                        errorCode = 500,
+                        errorMessage = "Internal Server Error"
+                    }
+                };
+            }
+            
         }
         public ApiResponse PostNewHotel(Hotel hotelToBeCreated)
         {
-            
-            if (hotelToBeCreated != null)
+
+            try
             {
-               hotelToBeCreated.Id = ++counter;
-                
+                hotelToBeCreated.Id = ++counter;
+
                 hotels.Add(hotelToBeCreated);
                 return new ApiResponse()
                 {
@@ -95,16 +101,19 @@ namespace WebApiDemo.Controllers
                     }
                 };
             }
-            return new ApiResponse()
+            catch (Exception e)
             {
-                Hotels = null,
-                Status = new Status()
+                return new ApiResponse()
                 {
-                    Apistatus = ApiStatus.Failure,
-                    errorCode = 500,
-                    errorMessage = "Internal Server Error"
-                }
-            };
+                    Hotels = null,
+                    Status = new Status()
+                    {
+                        Apistatus = ApiStatus.Failure,
+                        errorCode = 500,
+                        errorMessage = "Internal Server Error"
+                    }
+                };
+            }
         }
         public ApiResponse PutBooking(int id, [FromBody] int noOfRooms)
         {
@@ -167,7 +176,8 @@ namespace WebApiDemo.Controllers
         public ApiResponse DeleteHotelEntry(int id)
         {
             Hotel hotelToBeDelete = hotels.Find(z => z.Id == id);
-            if (hotelToBeDelete != null)
+
+            try
             {
                 hotels.Remove(hotelToBeDelete);
                 hotelToBeDelete.Id = counter--;
@@ -182,16 +192,19 @@ namespace WebApiDemo.Controllers
                     }
                 };
             }
-            return new ApiResponse()
+            catch (Exception e)
             {
-                Hotels = null,
-                Status = new Status()
+                return new ApiResponse()
                 {
-                    Apistatus = ApiStatus.Failure,
-                    errorCode = 500,
-                    errorMessage = "Internal Server Error"
-                }
-            };
+                    Hotels = null,
+                    Status = new Status()
+                    {
+                        Apistatus = ApiStatus.Failure,
+                        errorCode = 500,
+                        errorMessage = "Internal Server Error"
+                    }
+                };
+            }
         }
     }
 }
